@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning Javascript</title>
+</head>
+<body>
+	<label>Enter a value between 1 and 5: </label>
+	<input type="text" id="input_value" ><br>
+	<button type="submit" onclick="checkInput()">Check</button>
+</body>
+<script type="text/javascript">
+function checkInput () {
+	// alert("hello from onclick");
+	var value = document.getElementById('input_value').value;
+	if ( value <= 5 && value >= 1 )
+	{
+		alert("value is good.");
+	}
+}
+</script>
+</html>
